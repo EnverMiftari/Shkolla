@@ -1,0 +1,101 @@
+:root {
+  --main-width: 70%;
+  --challenge-width: 49%;
+  --text-align: center;
+  --p-width: 150px;
+  --input-width: 100px;
+}
+
+@media screen and (max-width: 740px) {
+  :root {
+    --main-width: 100%;
+    --challenge-width: 100%;
+    --p-width: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  :root {
+    --p-width: 130px;
+    --input-width: 80px;
+  }
+}
+@media screen and (max-width: 1025) {
+  :root {
+    --main-width: 100%;
+  }
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f1f1f2;
+  color: #071550;
+  font-family: "Segoe UI";
+  font-size: 10px;
+}
+.main {
+  background-color: #fff;
+  border-radius: 20px 50px 20px 20px;
+  width: var(--main-width);
+  margin: 50px auto;
+  padding: 10px 0px;
+}
+.gameArea {
+  width: 90%;
+  margin: 30px auto;
+}
+.game {
+  width: 100%;
+  border-radius: 20px 50px 20px 20px;
+  background-color: #f1f1f2;
+  display: inline-block;
+}
+.challenge {
+  width: var(--challenge-width);
+  padding: 25px 0px;
+  display: inline-block;
+  text-align: var(--text-align);
+}
+.challenge p {
+  width: var(--p-width);
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input {
+  font-size: 20;
+  width: var(--input-width);
+  color: #071550;
+  font-weight: bold;
+  border: 0px;
+  border-bottom: 2px solid #071550;
+  background-color: #f1f1f2;
+}
+input:focus {
+  outline: none;
+}
+.solved {
+  border-bottom: 2px solid #32cd32;
+  color: #32cd32;
+}
+.false {
+  border-bottom: 2px solid #da291c;
+  color: #da291c;
+}
+
+.gameWon {
+  display: none;
+  margin: 50px 0px;
+  width: 100%;
+  text-align: center;
+}
+#stStar {
+  transform: rotate(-10deg);
+}
+#ndStar {
+  transform: rotate(10deg);
+}
+.gameWon h1 {
+  font-size: 50px;
+}
