@@ -1,0 +1,177 @@
+:root {
+  --main-width: 70%;
+  --p-size: 18px;
+  --input-width: 20px;
+}
+@media only screen and (max-width: 1200px){
+    .thirdChallengeCol{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 795px) {
+  .challengeImage {
+    display: none !important;
+  }
+  :root {
+    --main-width: 100%;
+    --p-size: 14px;
+  }
+  .challengeCol {
+    width: 100% !important;
+  }
+  .challengeChallenges {
+    width: 90% !important;
+  }
+  h1 {
+    font-size: 16px !important;
+  }
+  input[type="number"] {
+    width: 50px !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f1f1f2;
+  color: #071550;
+  font-family: "Segoe UI";
+  font-size: 10px;
+}
+.main {
+  background-color: #fff;
+  border-radius: 20px 50px 20px 20px;
+  width: var(--main-width);
+  margin: 50px auto;
+  padding: 10px 0px;
+}
+.gameArea {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.challenges {
+  text-align: center;
+  width: 100%;
+}
+.challengeImage {
+  width: 140px;
+  display: inline;
+  position: relative;
+}
+.firstChallengeImage {
+  left: 20px;
+  top: 50px;
+}
+.secondChallengeImage {
+  left: -20px;
+  top: 30px;
+}
+
+.challengeChallenges {
+  display: inline-block;
+  width: 70%;
+  border-radius: 0px 20px 20px 0px;
+}
+.thirdChallengeChallenges {
+  border: 1px solid #8bc648;
+}
+.firstChallengeChallenges {
+  border: 1px solid #42afe3;
+}
+.secondChallengeChallenges {
+  border: 1px solid #da291c;
+}
+
+.firstChallengeCol input {
+  color: #42afe3;
+  border: 1px solid #42afe3;
+  border-radius: 50%;
+}
+.secondChallengeCol input {
+  color: #2c6ab4;
+  border: 1px solid #da291c;
+  width: 50px !important;
+}
+.thirdChallengeCol input {
+  border-radius: 50%;
+  color: #8bc648;
+  border: 1px solid #8bc648;
+}
+
+.challengeInput input {
+  width: var(--input-width);
+  height: var(--input-width);
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--p-size);
+}
+
+.challengeParagraph {
+  font-size: var(--p-size);
+  font-weight: bold;
+}
+.thirdChallengeCol p {
+  color: #8bc648;
+}
+.secondChallengeCol p {
+  color: #42afe3;
+}
+.firstChallengeCol p {
+  color: #42afe3;
+}
+
+.challengeCol {
+  margin: 10px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.thirdChallengeCol {
+  width: 49%;
+}
+
+.firstChallengeCol {
+  border-right: 1px solid #42afe3;
+  width: 32%;
+}
+.secondChallengeCol {
+  border-right: 1px solid #da291c;
+  width: 49%;
+}
+
+input:focus {
+  outline: none;
+}
+.solved {
+  border-bottom: 2px solid #32cd32 !important;
+  color: #32cd32 !important;
+}
+.false {
+  border-bottom: 2px solid #da291c !important;
+  color: #da291c !important;
+}
+.gameWon {
+  display: none;
+  margin: 50px 0px;
+  width: 100%;
+  text-align: center;
+}
+#stStar {
+  transform: rotate(-10deg);
+}
+#ndStar {
+  transform: rotate(10deg);
+}
+.gameWon h2 {
+  font-size: 50px;
+}

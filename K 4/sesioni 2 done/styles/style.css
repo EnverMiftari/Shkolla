@@ -1,0 +1,114 @@
+:root {
+  --main-width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --main-width: 100%;
+  }
+  p{
+    font-size: 24px !important;
+  }
+  h1{
+    font-size: 40px !important;
+  }
+  .first .story {
+    width: 100% !important;
+  }
+  .first .image img {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+  .second .story {
+    float: left;
+    width: 100% !important;
+  }
+  .second .img{
+    width: 100% !important;
+  }
+  .second .image img {
+    width: 100% !important;
+  }
+}
+.storyHolder {
+  width: 100%;
+  text-align: center;
+}
+.first {
+  float: left;
+}
+.first .story {
+  width: 50%;
+  float: left;
+}
+.first .image img {
+  margin: 50px 0px;
+  width: 40%;
+}
+
+.second {
+  float: left;
+}
+.second .story {
+  width: 50%;
+  float: right;
+  margin: 50px 0px;
+}
+.second .image img {
+  float: left;
+  width: 40%;
+}
+.third img {
+  width: 100%;
+}
+p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #545866;
+}
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f1f1f2;
+  color: #071550;
+  font-family: "Segoe UI";
+}
+.main {
+  background-color: #fff;
+  border-radius: 20px 50px 20px 20px;
+  width: var(--main-width);
+  margin: 50px auto;
+  padding: 10px 0px;
+}
+.gameArea {
+  width: 90%;
+  margin: 30px auto;
+}
+input {
+  border: 0;
+  color: #545866;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #545866;
+}
+input:focus {
+  outline: none;
+}
+.solved {
+  background-color: white !important;
+  border-bottom: 1px solid #32cd32 !important;
+  color: #32cd32 !important;
+}
+
+.false {
+  border-bottom: 1px solid #da291c !important;
+  color: #da291c !important;
+}
+h1 {
+  color: #a28463;
+  font-size: 35px;
+  text-align: left;
+}
